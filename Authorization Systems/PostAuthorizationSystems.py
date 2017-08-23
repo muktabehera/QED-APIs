@@ -8,17 +8,17 @@ header = {
 "Authorization": "Bearer "+Token+""
 }
 payload = {
-  "visibleInAllConfigurations": 0,
-  "configAdminCanEdit": 1,
+  "visibleInAllConfigurations": 'true',
+  "configAdminCanEdit": 'true',
   "configurations": [],
-  "id": "666",
+  "id": "667",
   "name": "23AugustAuthorizationSystem",
   "macKey": "11111111111111111111111111111111",
   "grantablePermissions": ["manageSystem","matchAny","provision","match","distribute","generate","manageConfiguration"]
 }
 #print header
 response = requests.post(url, data=payload, headers=header)
-# print response.status_code
+print response.status_code
 print response.text
 
 
