@@ -18,9 +18,9 @@ payload = {
 }
 #print header
 response = requests.post(url, data=payload, headers=header)
-print response.status_code
-print response.text
-
+# print response.status_code
+# print response.text
+#print payload
 
 if response.status_code == 200:
     print 'Test Case '+test_case+': Pass'
