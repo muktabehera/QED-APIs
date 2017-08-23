@@ -9,7 +9,7 @@ header = {
 }
 #print header
 response = requests.get(url,headers=header)
-# print GetDistributions.status_code
+# print response.status_code
 
 print response.text
 

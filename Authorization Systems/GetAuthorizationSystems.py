@@ -9,8 +9,8 @@ header = {
 }
 #print header
 response = requests.get(url,headers=header)
-# print GetDistributions.status_code
-# print GetDistributions.text
+# print response.status_code
+# print response.text
 
 
 if response.status_code == 200:
