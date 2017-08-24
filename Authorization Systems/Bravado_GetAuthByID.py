@@ -11,7 +11,8 @@ header1 = {
 
 http_client.set_api_key(
     'url',
-    'token', param_in='header'
+    'token', param_in='header1'
 )
-client = SwaggerClient.from_url('http://172.30.4.216/services/apidocs/qed.json', http_client=http_client, request_headers=header1)
-AuthorizationSystemsByID = client.AuthorizationSystems.getAuthorizationSystemsById(authorizationid= 'default').result()
+client = SwaggerClient.from_url('http://172.30.4.216/services/apidocs/qed.json', http_client=http_client)
+# AuthorizationSystemsByID = client.AuthorizationSystems.authorizationSystemsById(authorizationSystemsid= 'default').result()
+print header1
